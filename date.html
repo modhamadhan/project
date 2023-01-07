@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples</title>
+        <style>
+            div {
+          width: 300px;
+          margin: auto;
+          padding:25px;
+          border:2px solid Tomato;;
+           }
+            img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            span.a {
+             display:block; 
+             width: 100px;
+             height: 100px;
+             padding: 5px;
+             border: 1px solid blue;
+             background-color: rgb(255, 191, 0);
+            }
+            #div1 {
+             background-color: yellow;
+             height: 100px;
+             width: max(50%, 300px);
+}
+        </style>
+    </head>
+<body>
+
+<div>
+    This is the margin text with auto margins and Padding of 25px
+</div>
+<h1 style="background-color:rgba(255, 99, 71, 0.5); margin: 20px">Transparent color with rgb values</h1>
+<h2 style="color:blueviolet">Hello World</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<br>
+
+<p id="sample">JavaScript can change html element</p>
+
+<button type="button"
+  onclick="document.getElementById('sample').innerHTML = 'Hello JavaScript'">Click Me!
+</button>
+ <br> <br>
+
+<p id="d1"> To change the style of the text</p>
+<button type="button"
+   onclick="document.getElementById('d1').style.fontSize='20px'">Click Me..</button>
+
+<br> <br> <br>
+
+<p id="d2">Hide the text when the button is clicked.</p>
+<button type="button"
+onclick="document.getElementById('d2').style.display='none'">Click me@</button>
+
+<p><a href="mailto:sreenadhumodhamadhan@gmail.com">Send email</a></p>
+
+<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" title="go to mail">Gmail</a>
+
+<img src="1.jpg" alt="orange" style="width:40%">
+
+<p>A full stack web developer is a person who can develop both client and server software. 
+In addition to mastering <span class="a">HTML</span> and<span class="a">CSS</span> he/she also knows how to: Program a browser (like using JavaScript, jQuery, Angular, or Vue)
+ Program a server (like using PHP, ASP, Python, or Node)</p>
+
+<br>
+
+<div id="div1">Ramayana is one of the two important epics of Hinduism, the other being the Mahābhārata. </div>
+</body>
+</html>

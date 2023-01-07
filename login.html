@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <style>
+        input[type=text],[type=password] {
+
+            box-sizing: border-box;
+            border: 2px solid rgb(0, 255, 34);
+            border-radius: 8px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            
+            }
+
+            input[type=text]:focus {
+                background-color: rgb(254, 254, 254);
+            }
+            .image{
+                width: 100px;
+            }
+            .border{
+                border: 3px solid rgba(0, 0, 0, 0.87);
+                margin:auto;
+            }
+            .center {
+                 margin: auto;
+                 width: 30%;
+                 border: 1px solid #080d00;
+                padding: 10px;
+                height: 550px;
+                background-color: wheat;
+                border-radius: 5px;
+            }
+            img{
+                border-radius: 10px;
+                }
+            h2:hover{
+                color: blue;
+            }
+
+    </style>
+    <body>
+        <div class="header">
+            <img src="image/logo1.jpg">
+          <h2>GMR Institute Of Technology</h2>
+        </div>
+        
+        <div class="topnav">
+          <a href="main.html" target="_self"  class="active">Home</a>
+          <a href="login.html" target="_self" >Login</a>
+          <a href="about.html" target="_self" >About</a>
+          <a href="Departments.html" target="_self" >Departments</a>
+          <a href="" target="_self" >Notifications</a>
+          <a href="" target="_self" >Info</a>
+          <a href="Survey form.html" target="_self"id="align">Register</a>
+        </div>
+        
+        <div class="myDiv">
+            <div class="center">
+            <h2 ><u>Welcome To the Login Page</u></h2>
+        <form>
+            <div>
+                <img src="Image/logimg.png" class="image">
+            </div>
+          <label for="email"><b>Enter Username:</b></label><br />
+          <input type="text" id="email" name="uname" placeholder="Enter User name"><br><br>
+        
+          <label for="pin"><b>Enter Password:</b></label><br />
+          <input type="password" id="pwd" name="pwd"placeholder="**********" ><br><br>  
+
+          <button value="Login" class="button1">Login</button><br/><br/>
+          <span class="psw"><a href="forget.html" style="text-decoration: none; color: black;">Forget Password?</a></span><br/><br>
+          <span class="psw"> <a href="Survey form.html" style="text-decoration: none; color: black;">Create Account</a><br/><br></span><br>
+                <span class="psm"><input type="checkbox" checked="checked"> Remember me</span>
+                <br>
+            </form>
+            </div>
+    </div>
+         
+       
+        <div class="footer">
+            <div class="row">
+               <div class="column" style="background: color #333;">
+               <h2 class="font">USEFULL LINKS</h2>
+               <ul>
+                   <li><a href="">About</a></li><br>
+                   <li><a href="">Contact us</a></li><br>
+                   <li><a href="">Blog</a></li><br>
+                   <li><a href="">Services</a></li><br>
+               </ul>
+               </div>
+               <div class="column" style="background: color #333;">
+                 <h2 class="font">NEWS LETTER</h2>
+                   <form >
+                       <input type= "text" placeholder= "Your Email Address">
+                       <button type= "submit" >SUBSCRIBE NOW</button>
+                   </form>
+               </div>
+               <div class="column">
+                 <h2 class="font">CONTACT US</h2>
+                 <p>GMR Institute of Technology, GMR Nagar, Rajam-532 127, Vizianagaram Dist., Andhra Pradesh, Ph:08941-251592,<br> E-Mail : gmrit@gmrit.edu.in </p>
+
+                </div>
+             </div>
+    </body>
+</html>

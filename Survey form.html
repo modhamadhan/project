@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Survey-Form
+    </title>
+ 
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: 'Times New Roman';
+            text-align: center;
+        }
+        .form1 {
+            background-color: wheat;
+            max-width: 570px;
+            padding: 30px 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            border-radius: 5%;
+            margin:30px auto;
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]
+        {
+            display: inline-block;
+            width: auto;
+            accent-color:red;
+        }
+
+        .button1 {
+            background-color: aquamarine;
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: 'Lucida Sans';
+            font-size: 21px;
+            display: block;
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            margin: auto;
+        }
+        h1:hover{
+            text-shadow: #777;
+        }
+        ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+img{
+    border-radius: 10px;
+  }
+  h2:hover{
+    color: blue;
+  }
+</style>
+    
+</head>
+  
+<body>
+    <div class="header">
+        <img src="image/logo1.jpg">
+      <h2>GMR Institute Of Technology</h2>
+    </div>
+    
+    <div class="topnav">
+      <a href="main.html" target="_self"  class="active">Home</a>
+      <a href="login.html" target="_self" >Login</a>
+      <a href="about.html" target="_self" >About</a>
+      <a href="Departments.html" target="_self" >Departments</a>
+      <a href="" target="_self" >Notifications</a>
+      <a href="" target="_self" >Info</a>
+      <a href="Survey form.html" target="_self"id="align">Register</a>
+    </div>
+
+     <h1>Registration</h1>
+    <form class="form1">
+
+        <div class="form-control">
+            <label><b>Name:</b></label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+  
+        <div class="form-control">
+            <label><b>Email:</b></label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+  
+        <div class="form-control">
+        <label for="phone"><strong>Mobile:</strong></label>
+        <input type="number" id="phone" name="phone" placeholder="9645728411" required />
+        </div>
+
+        <div class="form-control">
+            <label><b>Gender</b></label>
+            <input type="radio" name="gender" value="male"/> Male
+            <input type="radio" name="gender"  value="female"/> Female
+            <input type="radio" name="gender"  value="others"/> Others
+        </div>
+
+        <div class="form-control">
+            <label><strong>Age</strong></label>
+            <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+            <label for="Address">Address</label>
+            <textarea name="Address" id="Address" placeholder="Enter your address here"></textarea>
+        </div>
+        
+        <div class="form-control">
+            <label>Qualification:</label>
+            <select id="qualification">
+                <option value="choose">Choose</option>
+                <option value="B.TECH">B.TECH</option>
+                <option value="B.SC">B.SC</option>
+                <option value="B.A">B.A</option>
+                <option value="B.E">B.E</option>
+                <option value="M.TECH">M.TECH</option>
+                <option value="M.E">M.E</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Languages</label>
+            <label for="inp-1">
+                <input type="checkbox"name="inp" value="C">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp" value="C++">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp" value="C#">C#</input></label>
+        </div>
+        <button class="button1" type="submit" value="submit" onclick="myfun()" style="background-color: lightblue;">Submit</button><br/>
+        <div style="text-align: right;">
+        <a href="login.html" style="text-decoration: none; color: black;">Already have an account please login</a>
+    </div>
+    </form>
+<div class="footer">
+    <div class="row">
+       <div class="column" style="background: color #333;">
+       <h2 class="font">USEFULL LINKS</h2>
+       <ul>
+           <li><a href="">About</a></li><br>
+           <li><a href="">Contact us</a></li><br>
+           <li><a href="">Blog</a></li><br>
+           <li><a href="">Services</a></li><br>
+       </ul>
+       </div>
+       <div class="column" style="background: color #333;">
+         <h2 class="font">NEWS LETTER</h2>
+           <form>
+               <input type= "text" placeholder= "Your Email Address">
+               <button type= "submit" >SUBSCRIBE NOW</button>
+           </form>
+       </div>
+       <div class="column">
+         <h2 class="font">CONTACT US</h2>
+         <p>GMR Institute of Technology, GMR Nagar, Rajam-532 127, Vizianagaram Dist., Andhra Pradesh, Ph:08941-251592,<br> E-Mail : gmrit@gmrit.edu.in </p>
+        </div>
+     </div>
+<script>
+    function myfun(){
+        var checkboxes = document.getElementsByName("inp");
+        var vals = "";
+        for (var i=0, n=checkboxes.length;i<n;i++) 
+        {
+            if (checkboxes[i].checked) 
+            {
+                vals += " "+checkboxes[i].value;
+            }
+        }
+        alert(document.getElementById("name").value +"\n"+document.getElementById("email").value +"\n"+document.getElementById("phone").value +"\n"+document.querySelector('input[type=radio][name=gender]:checked').value +"\n"+document.getElementById("age").value +"\n"+document.getElementById("Address").value +"\n"+document.getElementById("qualification").value +"\n"+vals);
+        
+    }
+  </script>
+</body>
+</html>
